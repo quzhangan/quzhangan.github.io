@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>https://quzhangan.github.io/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 31 Oct 2022 21:57:51 +0800</lastBuildDate><atom:link href="https://quzhangan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo搭建个人博客</title>
+      <link>https://quzhangan.github.io/post/hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%96%87%E6%A1%A3/</link>
+      <pubDate>Mon, 31 Oct 2022 21:57:51 +0800</pubDate>
+      
+      <guid>https://quzhangan.github.io/post/hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%96%87%E6%A1%A3/</guid>
+      <description>安装hugo 官网：https://gohugo.io/
+新建站点 hugo new site hugoblog 主题下载 主题官网：https://themes.gohugo.io/
+打开hugoblog文件夹下的themes目录 输入git clone 加克隆网址 会在该文件夹新建一个主题文件夹
+打开config.toml文件添加
+theme = &amp;#39;主题名&amp;#39; 就可以更改博客主题
+文章编写 新建文章
+hugo new post/名称.md 目录设置：在每个content目录下文件夹新建一个 _index.md 可以用来控制 标题和展示
+可以在目录archetypes/default.md 下使用模板，即可在新建文章的时候自动加上模板配置
+博客启动 hugo server -D //本地预览 将个人博客部署到远端服务器 打开GitHub 新建仓库 用户名.github.io
+博客目录下输入
+hugo --theme=hugo-PaperMod --baseUrl=&amp;#34;https://用户名.github.io/&amp;#34; --buildDrafts 成功后新建了一个public文件夹
+将内容传到GitHub
+首先在public文件夹
+git init git add . git commit -m &amp;#34;我的hugo博客第一次提交&amp;#34; 关联远端仓库
+git remote add origin http://github.com/用户名/用户名.github.io.git 推到远端
+git push git push -u origin master </description>
+    </item>
+    
+  </channel>
+</rss>
