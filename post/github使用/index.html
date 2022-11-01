@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>github使用 | My New Hugo Site</title>
+<meta name="keywords" content="">
+<meta name="description" content="github使用教程 Git和Git分别是什么 Git是一个运行在电脑上的版本控制软件： 一个代码可以提交多个版本，当你发现代码有问题需要回退，就可以恢复到之前的版本 Git hub是基于Git这个版本控制软件打造的网站 Git的三个概念：提交commit、仓库repository、分支branch git 下载链接：https://registry.npmmirror.com/binary.html?path=git-for-windows/ 看别人的项目 git clone Star README.md issue LICENSE
+开源项目渠道 https://github.com/trending/ https://github.com/521xueweihan/HelloGitHub https://github.com/ruanyf/weekly https://www.zhihu.com/column/mm-fe 特殊查找资源技巧 找百科大全 awesome xxx 可以快速的了解一个领域 找例子 xxx sample 找空项目架子 xxx starter / xxx boilerplate 找教程 xxx tutorial git与vs code vs code中打开git bash终端 打开设置搜索shell:windows
+{ &#34;workbench.colorTheme&#34;: &#34;Visual Studio Dark&#34;, &#34;terminal.integrated.allowMnemonics&#34;: true, &#34;terminal.integrated.profiles.windows&#34;: { &#34;PowerShell&#34;: { &#34;source&#34;: &#34;PowerShell&#34;, &#34;icon&#34;: &#34;terminal-powershell&#34; }, &#34;Command Prompt&#34;: { &#34;path&#34;: [ &#34;${env:windir}\\Sysnative\\cmd.exe&#34;, &#34;${env:windir}\\System32\\cmd.exe&#34; ], &#34;args&#34;: [], &#34;icon&#34;: &#34;terminal-cmd&#34; }, &#34;Git-Bash&#34;: { &#34;path&#34;: &#34;E:\\Program Files\\Git\\bin\\bash.">
+<meta name="author" content="">
+<link rel="canonical" href="https://quzhangan.github.io/post/github%E4%BD%BF%E7%94%A8/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.3299c596a7007118365635c056dd427dace22b7b8c1341fdef6fa6c31359ba10.css" integrity="sha256-MpnFlqcAcRg2VjXAVt1CfaziK3uME0H972&#43;mwxNZuhA=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.acb54fd32bbc1982428b8850317e45d076b95012730a5936667e6bc21777692a.js" integrity="sha256-rLVP0yu8GYJCi4hQMX5F0Ha5UBJzClk2Zn5rwhd3aSo="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://quzhangan.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://quzhangan.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://quzhangan.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://quzhangan.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://quzhangan.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="github使用" />
+<meta property="og:description" content="github使用教程 Git和Git分别是什么 Git是一个运行在电脑上的版本控制软件： 一个代码可以提交多个版本，当你发现代码有问题需要回退，就可以恢复到之前的版本 Git hub是基于Git这个版本控制软件打造的网站 Git的三个概念：提交commit、仓库repository、分支branch git 下载链接：https://registry.npmmirror.com/binary.html?path=git-for-windows/ 看别人的项目 git clone Star README.md issue LICENSE
+开源项目渠道 https://github.com/trending/ https://github.com/521xueweihan/HelloGitHub https://github.com/ruanyf/weekly https://www.zhihu.com/column/mm-fe 特殊查找资源技巧 找百科大全 awesome xxx 可以快速的了解一个领域 找例子 xxx sample 找空项目架子 xxx starter / xxx boilerplate 找教程 xxx tutorial git与vs code vs code中打开git bash终端 打开设置搜索shell:windows
+{ &#34;workbench.colorTheme&#34;: &#34;Visual Studio Dark&#34;, &#34;terminal.integrated.allowMnemonics&#34;: true, &#34;terminal.integrated.profiles.windows&#34;: { &#34;PowerShell&#34;: { &#34;source&#34;: &#34;PowerShell&#34;, &#34;icon&#34;: &#34;terminal-powershell&#34; }, &#34;Command Prompt&#34;: { &#34;path&#34;: [ &#34;${env:windir}\\Sysnative\\cmd.exe&#34;, &#34;${env:windir}\\System32\\cmd.exe&#34; ], &#34;args&#34;: [], &#34;icon&#34;: &#34;terminal-cmd&#34; }, &#34;Git-Bash&#34;: { &#34;path&#34;: &#34;E:\\Program Files\\Git\\bin\\bash." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://quzhangan.github.io/post/github%E4%BD%BF%E7%94%A8/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-11-01T19:11:32+08:00" />
+<meta property="article:modified_time" content="2022-11-01T19:11:32+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="github使用"/>
+<meta name="twitter:description" content="github使用教程 Git和Git分别是什么 Git是一个运行在电脑上的版本控制软件： 一个代码可以提交多个版本，当你发现代码有问题需要回退，就可以恢复到之前的版本 Git hub是基于Git这个版本控制软件打造的网站 Git的三个概念：提交commit、仓库repository、分支branch git 下载链接：https://registry.npmmirror.com/binary.html?path=git-for-windows/ 看别人的项目 git clone Star README.md issue LICENSE
+开源项目渠道 https://github.com/trending/ https://github.com/521xueweihan/HelloGitHub https://github.com/ruanyf/weekly https://www.zhihu.com/column/mm-fe 特殊查找资源技巧 找百科大全 awesome xxx 可以快速的了解一个领域 找例子 xxx sample 找空项目架子 xxx starter / xxx boilerplate 找教程 xxx tutorial git与vs code vs code中打开git bash终端 打开设置搜索shell:windows
+{ &#34;workbench.colorTheme&#34;: &#34;Visual Studio Dark&#34;, &#34;terminal.integrated.allowMnemonics&#34;: true, &#34;terminal.integrated.profiles.windows&#34;: { &#34;PowerShell&#34;: { &#34;source&#34;: &#34;PowerShell&#34;, &#34;icon&#34;: &#34;terminal-powershell&#34; }, &#34;Command Prompt&#34;: { &#34;path&#34;: [ &#34;${env:windir}\\Sysnative\\cmd.exe&#34;, &#34;${env:windir}\\System32\\cmd.exe&#34; ], &#34;args&#34;: [], &#34;icon&#34;: &#34;terminal-cmd&#34; }, &#34;Git-Bash&#34;: { &#34;path&#34;: &#34;E:\\Program Files\\Git\\bin\\bash."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://quzhangan.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "github使用",
+      "item": "https://quzhangan.github.io/post/github%E4%BD%BF%E7%94%A8/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "github使用",
+  "name": "github使用",
+  "description": "github使用教程 Git和Git分别是什么 Git是一个运行在电脑上的版本控制软件： 一个代码可以提交多个版本，当你发现代码有问题需要回退，就可以恢复到之前的版本 Git hub是基于Git这个版本控制软件打造的网站 Git的三个概念：提交commit、仓库repository、分支branch git 下载链接：https://registry.npmmirror.com/binary.html?path=git-for-windows/ 看别人的项目 git clone Star README.md issue LICENSE\n开源项目渠道 https://github.com/trending/ https://github.com/521xueweihan/HelloGitHub https://github.com/ruanyf/weekly https://www.zhihu.com/column/mm-fe 特殊查找资源技巧 找百科大全 awesome xxx 可以快速的了解一个领域 找例子 xxx sample 找空项目架子 xxx starter / xxx boilerplate 找教程 xxx tutorial git与vs code vs code中打开git bash终端 打开设置搜索shell:windows\n{ \u0026#34;workbench.colorTheme\u0026#34;: \u0026#34;Visual Studio Dark\u0026#34;, \u0026#34;terminal.integrated.allowMnemonics\u0026#34;: true, \u0026#34;terminal.integrated.profiles.windows\u0026#34;: { \u0026#34;PowerShell\u0026#34;: { \u0026#34;source\u0026#34;: \u0026#34;PowerShell\u0026#34;, \u0026#34;icon\u0026#34;: \u0026#34;terminal-powershell\u0026#34; }, \u0026#34;Command Prompt\u0026#34;: { \u0026#34;path\u0026#34;: [ \u0026#34;${env:windir}\\\\Sysnative\\\\cmd.exe\u0026#34;, \u0026#34;${env:windir}\\\\System32\\\\cmd.exe\u0026#34; ], \u0026#34;args\u0026#34;: [], \u0026#34;icon\u0026#34;: \u0026#34;terminal-cmd\u0026#34; }, \u0026#34;Git-Bash\u0026#34;: { \u0026#34;path\u0026#34;: \u0026#34;E:\\\\Program Files\\\\Git\\\\bin\\\\bash.",
+  "keywords": [
+    
+  ],
+  "articleBody": "github使用教程 Git和Git分别是什么 Git是一个运行在电脑上的版本控制软件： 一个代码可以提交多个版本，当你发现代码有问题需要回退，就可以恢复到之前的版本 Git hub是基于Git这个版本控制软件打造的网站 Git的三个概念：提交commit、仓库repository、分支branch git 下载链接：https://registry.npmmirror.com/binary.html?path=git-for-windows/ 看别人的项目 git clone Star README.md issue LICENSE\n开源项目渠道 https://github.com/trending/ https://github.com/521xueweihan/HelloGitHub https://github.com/ruanyf/weekly https://www.zhihu.com/column/mm-fe 特殊查找资源技巧 找百科大全 awesome xxx 可以快速的了解一个领域 找例子 xxx sample 找空项目架子 xxx starter / xxx boilerplate 找教程 xxx tutorial git与vs code vs code中打开git bash终端 打开设置搜索shell:windows\n{ \"workbench.colorTheme\": \"Visual Studio Dark\", \"terminal.integrated.allowMnemonics\": true, \"terminal.integrated.profiles.windows\": { \"PowerShell\": { \"source\": \"PowerShell\", \"icon\": \"terminal-powershell\" }, \"Command Prompt\": { \"path\": [ \"${env:windir}\\\\Sysnative\\\\cmd.exe\", \"${env:windir}\\\\System32\\\\cmd.exe\" ], \"args\": [], \"icon\": \"terminal-cmd\" }, \"Git-Bash\": { \"path\": \"E:\\\\Program Files\\\\Git\\\\bin\\\\bash.exe\" , \"args\": [], } } } 初始化一个仓库 git clone 和点击下载的区别 git clone下来的是一个仓库，而download zip只下载得到了文件夹。 文件夹要通过git初始化才能成为仓库\ngit 初始化 在文件夹目录下打开git bash输入git init\ngit常用命令 git init // 初始化本地仓库 git config –global user.name “myname” // 配置用户名 git config –global user.email “myname@mymail.com” //配置邮箱\ngit commit // 确认本地缓存区的内容，可以准备push git status // 确定本地缓存区的状态 git log –stat //查看提交的历史\n第一次提交 git add -A 从工作区提交到暂存区 git commit -m “提交信息 ” 从暂存区到仓库 项目维护 git checkout //工作区打回去 git reset HEAD^ //提交后撤回\n分支 以当前分支为基础新建分支：git checkout -b 列举所有的分支：git branch 单纯地切换到某个分支：git checkout 删掉特定的分支：git branch -D 合并分支：git merge git 与github远程仓库 git remote add origin code@github.git //绑定本地和远程仓库 git pull // 拉取远程仓库的变化来同步本地的状态 git add // 确认本地仓库的变化到本地缓存区 git push // 提交本地仓库到远程仓库\n",
+  "wordCount" : "179",
+  "inLanguage": "en",
+  "datePublished": "2022-11-01T19:11:32+08:00",
+  "dateModified": "2022-11-01T19:11:32+08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://quzhangan.github.io/post/github%E4%BD%BF%E7%94%A8/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "My New Hugo Site",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://quzhangan.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://quzhangan.github.io/" accesskey="h" title="My New Hugo Site (Alt + H)">My New Hugo Site</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      github使用
+    </h1>
+    <div class="post-meta"><span title='2022-11-01 19:11:32 +0800 CST'>November 1, 2022</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="github使用教程">github使用教程<a hidden class="anchor" aria-hidden="true" href="#github使用教程">#</a></h1>
+<h2 id="git和git分别是什么">Git和Git分别是什么<a hidden class="anchor" aria-hidden="true" href="#git和git分别是什么">#</a></h2>
+<ol>
+<li>Git是一个运行在电脑上的版本控制软件：
+一个代码可以提交多个版本，当你发现代码有问题需要回退，就可以恢复到之前的版本</li>
+<li>Git hub是基于Git这个版本控制软件打造的网站</li>
+<li>Git的三个概念：提交commit、仓库repository、分支branch</li>
+<li>git 下载链接：https://registry.npmmirror.com/binary.html?path=git-for-windows/</li>
+</ol>
+<h2 id="看别人的项目">看别人的项目<a hidden class="anchor" aria-hidden="true" href="#看别人的项目">#</a></h2>
+<p>git clone
+Star
+README.md
+issue
+LICENSE</p>
+<h2 id="开源项目渠道">开源项目渠道<a hidden class="anchor" aria-hidden="true" href="#开源项目渠道">#</a></h2>
+<ol>
+<li><a href="https://github.com/trending/">https://github.com/trending/</a></li>
+<li><a href="https://github.com/521xueweihan/HelloGitHub">https://github.com/521xueweihan/HelloGitHub</a></li>
+<li><a href="https://github.com/ruanyf/weekly">https://github.com/ruanyf/weekly</a></li>
+<li><a href="https://www.zhihu.com/column/mm-fe">https://www.zhihu.com/column/mm-fe</a></li>
+</ol>
+<h2 id="特殊查找资源技巧">特殊查找资源技巧<a hidden class="anchor" aria-hidden="true" href="#特殊查找资源技巧">#</a></h2>
+<ol>
+<li>找百科大全 awesome xxx  可以快速的了解一个领域</li>
+<li>找例子 xxx sample</li>
+<li>找空项目架子 xxx starter / xxx boilerplate</li>
+<li>找教程  xxx tutorial</li>
+</ol>
+<hr>
+<h2 id="git与vs-code">git与vs code<a hidden class="anchor" aria-hidden="true" href="#git与vs-code">#</a></h2>
+<h3 id="vs-code中打开git-bash终端">vs code中打开git bash终端<a hidden class="anchor" aria-hidden="true" href="#vs-code中打开git-bash终端">#</a></h3>
+<p>打开设置搜索shell:windows</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;workbench.colorTheme&#34;</span>: <span style="color:#e6db74">&#34;Visual Studio Dark&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;terminal.integrated.allowMnemonics&#34;</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;terminal.integrated.profiles.windows&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;PowerShell&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;source&#34;</span>: <span style="color:#e6db74">&#34;PowerShell&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;icon&#34;</span>: <span style="color:#e6db74">&#34;terminal-powershell&#34;</span>
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;Command Prompt&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;path&#34;</span>: [
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;${env:windir}\\Sysnative\\cmd.exe&#34;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#34;${env:windir}\\System32\\cmd.exe&#34;</span>
+</span></span><span style="display:flex;"><span>            ],
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;args&#34;</span>: [],
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;icon&#34;</span>: <span style="color:#e6db74">&#34;terminal-cmd&#34;</span>
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;Git-Bash&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;path&#34;</span>: <span style="color:#e6db74">&#34;E:\\Program Files\\Git\\bin\\bash.exe&#34;</span> ,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;args&#34;</span>: [],
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="初始化一个仓库">初始化一个仓库<a hidden class="anchor" aria-hidden="true" href="#初始化一个仓库">#</a></h2>
+<h3 id="git-clone-和点击下载的区别">git clone 和点击下载的区别<a hidden class="anchor" aria-hidden="true" href="#git-clone-和点击下载的区别">#</a></h3>
+<p><em>git clone</em>下来的是一个<strong>仓库</strong>，而<em>download zip</em>只下载得到了<strong>文件夹</strong>。
+<strong>文件夹</strong>要通过<strong>git初始化</strong>才能成为<strong>仓库</strong></p>
+<h3 id="git-初始化">git 初始化<a hidden class="anchor" aria-hidden="true" href="#git-初始化">#</a></h3>
+<p>在文件夹目录下打开git bash输入git init</p>
+<h2 id="git常用命令">git常用命令<a hidden class="anchor" aria-hidden="true" href="#git常用命令">#</a></h2>
+<p>git init  // 初始化本地仓库
+git config &ndash;global user.name &ldquo;myname&rdquo;  // 配置用户名
+git config &ndash;global user.email &ldquo;<a href="mailto:myname@mymail.com">myname@mymail.com</a>&rdquo;  //配置邮箱</p>
+<p>git commit  // 确认本地缓存区的内容，可以准备push
+git status   // 确定本地缓存区的状态
+git log &ndash;stat  //查看提交的历史</p>
+<h3 id="第一次提交">第一次提交<a hidden class="anchor" aria-hidden="true" href="#第一次提交">#</a></h3>
+<ol>
+<li>git add -A
+从工作区提交到暂存区</li>
+<li>git commit -m “提交信息 ”
+从暂存区到仓库</li>
+</ol>
+<h3 id="项目维护">项目维护<a hidden class="anchor" aria-hidden="true" href="#项目维护">#</a></h3>
+<p>git checkout <!-- raw HTML omitted --> //工作区打回去
+git reset HEAD^ //提交后撤回</p>
+<h3 id="分支">分支<a hidden class="anchor" aria-hidden="true" href="#分支">#</a></h3>
+<p>以当前分支为基础新建分支：git checkout -b <!-- raw HTML omitted -->
+列举所有的分支：git branch
+单纯地切换到某个分支：git checkout <!-- raw HTML omitted -->
+删掉特定的分支：git branch -D <!-- raw HTML omitted -->
+合并分支：git merge <!-- raw HTML omitted --></p>
+<h3 id="git-与github远程仓库">git 与github远程仓库<a hidden class="anchor" aria-hidden="true" href="#git-与github远程仓库">#</a></h3>
+<p>git remote add origin <a href="mailto:code@github.git">code@github.git</a>  //绑定本地和远程仓库
+git pull   // 拉取远程仓库的变化来同步本地的状态
+git add  // 确认本地仓库的变化到本地缓存区
+git push   // 提交本地仓库到远程仓库</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2022 <a href="https://quzhangan.github.io/">My New Hugo Site</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

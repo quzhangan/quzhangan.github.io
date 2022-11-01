@@ -6,7 +6,18 @@
     <description>Recent content in Posts on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 31 Oct 2022 21:57:51 +0800</lastBuildDate><atom:link href="https://quzhangan.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Nov 2022 19:11:32 +0800</lastBuildDate><atom:link href="https://quzhangan.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>github使用</title>
+      <link>https://quzhangan.github.io/post/github%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Tue, 01 Nov 2022 19:11:32 +0800</pubDate>
+      
+      <guid>https://quzhangan.github.io/post/github%E4%BD%BF%E7%94%A8/</guid>
+      <description>github使用教程 Git和Git分别是什么 Git是一个运行在电脑上的版本控制软件： 一个代码可以提交多个版本，当你发现代码有问题需要回退，就可以恢复到之前的版本 Git hub是基于Git这个版本控制软件打造的网站 Git的三个概念：提交commit、仓库repository、分支branch git 下载链接：https://registry.npmmirror.com/binary.html?path=git-for-windows/ 看别人的项目 git clone Star README.md issue LICENSE
+开源项目渠道 https://github.com/trending/ https://github.com/521xueweihan/HelloGitHub https://github.com/ruanyf/weekly https://www.zhihu.com/column/mm-fe 特殊查找资源技巧 找百科大全 awesome xxx 可以快速的了解一个领域 找例子 xxx sample 找空项目架子 xxx starter / xxx boilerplate 找教程 xxx tutorial git与vs code vs code中打开git bash终端 打开设置搜索shell:windows
+{ &amp;#34;workbench.colorTheme&amp;#34;: &amp;#34;Visual Studio Dark&amp;#34;, &amp;#34;terminal.integrated.allowMnemonics&amp;#34;: true, &amp;#34;terminal.integrated.profiles.windows&amp;#34;: { &amp;#34;PowerShell&amp;#34;: { &amp;#34;source&amp;#34;: &amp;#34;PowerShell&amp;#34;, &amp;#34;icon&amp;#34;: &amp;#34;terminal-powershell&amp;#34; }, &amp;#34;Command Prompt&amp;#34;: { &amp;#34;path&amp;#34;: [ &amp;#34;${env:windir}\\Sysnative\\cmd.exe&amp;#34;, &amp;#34;${env:windir}\\System32\\cmd.exe&amp;#34; ], &amp;#34;args&amp;#34;: [], &amp;#34;icon&amp;#34;: &amp;#34;terminal-cmd&amp;#34; }, &amp;#34;Git-Bash&amp;#34;: { &amp;#34;path&amp;#34;: &amp;#34;E:\\Program Files\\Git\\bin\\bash.</description>
+    </item>
+    
     <item>
       <title>Hugo搭建个人博客</title>
       <link>https://quzhangan.github.io/post/hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E6%96%87%E6%A1%A3/</link>
