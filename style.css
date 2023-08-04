@@ -1,0 +1,44 @@
+html {
+    background-color: #00539f;
+    font-size: 20px; /* px 表示“像素（pixel）”: 基础字号为 10 像素 */
+    font-family: "Open Sans", sans-serif; /* 这应该是你从 Google Fonts 得到的其余输出。 想用于文本的字体。这个规则为整个页面定义了一个全局的基本字体和字体大小*/
+  }
+  h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  a,
+  p,
+  li{
+    font-size: 16px;
+    line-height: 2;         /*行高和字间距*/
+    letter-spacing: 1px;
+  }
+  
+  body {
+    /* width: 600px; 强制页面永远保持 600 像素宽。
+    margin: 0 auto; 第一个值影响元素的上下方向（在这个例子中设置为 0）；
+                    第二个值影响左右方向。(这里，auto 是一个特殊的值，它将可用的水平空间平均分配给左和右
+    background-color: #FF9500; 如前文所述，指定元素的背景颜色
+    padding: 0 20px 20px 20px; 我们给内边距设置了四个值来让内容四周产生一点空间
+    border: 5px solid black; 这是为边框的宽度、样式和颜色设置的值。在本例中，它是一个在主体的所有侧面的 5 像素宽的纯黑色边框。 */
+    width: 1200px;   
+    margin: 0 auto;
+    background-color: #ff9500;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+  }
+
+  h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: #00539f;
+    text-shadow: 3px 3px 1px black; /*元素的文本内容施加阴影 水平 垂直 模糊半径 阴影颜色*/
+  }
+  
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
