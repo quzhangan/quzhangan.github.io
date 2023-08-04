@@ -1,6 +1,6 @@
- theme: jekyll-theme-minimal
- title: quzhangan's homepage
- description: Bookmark this to keep an eye on my project updates!
+#  theme: jekyll-theme-minimal
+#  title: quzhangan's homepage
+#  description: Bookmark this to keep an eye on my project updates!
 # # 目录结构
 # source:      .
 # destination: ./_site
