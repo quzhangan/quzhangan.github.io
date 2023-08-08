@@ -2,15 +2,28 @@
 <html lang="zh">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <!-- name指定了 meta 元素的类型；说明该元素包含了什么类型的信息。 content 指定了实际的元数据内容。-->
+    <!-- description 也被使用在搜索引擎显示的结果页中 -->
+    <meta name="viewport" content="width=device-width" />   
     <title>quzhangan's blog</title>
     <link href="styles/style.css" rel="stylesheet"/>
+    <!-- 自定义图标 -->
+    <link rel="icon" href="face_grin_tongue_icon.png" type="image/x-icon" />
+    
+    <!--  defer 以告诉浏览器在解析完成 HTML 后再加载 JavaScript -->
+    <script src="stripts/main.js" defer></script>
+
   </head>
   <body>  
     <h1>Welcome to my channel!</h1>
-    <a href="web_project/index.html">html学习</a> 
-    <a href="README.md">git 常用命令</a> 
+    <a href="web_project/index.html" title="practice">web学习</a> 
     <img src = "images/zhuye.jpg" alt ="123"/>
-    <script src="stripts/main.js" defer></script>
+
+    <form class="row" id="greet-form">
+      <input id="greet-input" placeholder="Enter your name..."/>
+      <button type="submit">Greet</button>
+      <p id="greet-msg"></p>
+    </form>
+
   </body>
 </html>

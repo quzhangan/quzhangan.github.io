@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width" />
     <title>My test page</title>
     <link href="styles/style.css" rel="stylesheet"/>
+    <script src="scripts/main.js" defer></script>
   </head>
   <body>
-    <button>切换用户</button>
+    <ul>
+    <li><a href="#end">最下面</a></li> 
+    <li><a href="../README.md" title="晚点搞">git 常用命令</a> </li>
+    <li><a href="dynamic list/meta-example.html" title="动态列表">动态列表</a> </li>
+    </ul>
+
     
+    <button>切换用户</button>
     <h1>Welcome to my channel!</h1>
     <h3>---p---段落---</h3>
     <p>My cat is very grumpy</p>
@@ -26,9 +33,83 @@
     <h3>---css---盒子模型---</h3>
     <img src="images/2.png" alt="My test image2" width="600"/>
     <img src="images/22.png" alt="My test image" />
+    
+
+    <a
+      href="https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=zh-CN"
+      download="firefox-latest-64bit-installer.exe">  
+      下载最新的 Firefox 中文版 - Windows（64 位）  
+    </a>
+
+    <h3>---描述列表dl dt dd---</h3>
+    <dl>
+      <dt>培根</dt>
+      <dd>整个世界的粘合剂。</dd>
+      <dt>鸡蛋</dt>
+      <dd>一块蛋糕的粘合剂。</dd>
+      <dt>咖啡</dt>
+      <dd>一种浅棕色的饮料。</dd>
+      <dd>可以在清晨带来活力。</dd>
+    </dl>
+
+    <h3>---块引用 blockquote---</h3>
+    <h3>---行内引用 q---</h3>
+    <h3>---引文 cite---</h3>
+    <h3>---缩略语 abbr---</h3>
+    <h3>---标记联系方式 address---</h3>
+    <h3>---上标下标 sup sub---</h3>
+    
+    <h3>---大量的 HTML 元素可以来标记计算机代码---</h3>
+    <ul>
+      <li>code：用于标记计算机通用代码i。</li>
+      <li>pre：用于保留空白字符（通常用于代码块）——如果文本中使用了缩进或多余的空白，浏览器将忽略它，你将不会在呈现的页面上看到它。但是，如果你将文本包含在标签中，那么空白将会以与你在文本编辑器中看到的相同的方式渲染出来。</li>
+      <li>var：用于标记具体i变量名。</li>
+      <li>kbd：用于标记输入电脑的键盘（或其他类型）输入。</li>
+      <li>samp：用于标记计算机程序的输出。</li>
+    </ul>
+
+    <!-- 标准简单日期 -->
+    <time datetime="2016-01-20">20 January 2016</time>
+    <!-- 只包含年份和月份-->
+    <time datetime="2016-01">January 2016</time>
+    <!-- 只包含月份和日期 -->
+    <time datetime="01-20">20 January</time>
+    <!-- 只包含时间，小时和分钟数 -->
+    <time datetime="19:30">19:30</time>
+    <!-- 还可包含秒和毫秒 -->
+    <time datetime="19:30:01.856">19:30:01.856</time>
+    <!-- 日期和时间 -->
+    <time datetime="2016-01-20T19:30">7.30pm, 20 January 2016</time>
+    <!-- 含有时区偏移值的日期时间 -->
+    <time datetime="2016-01-20T19:30+01:00"
+      >7.30pm, 20 January 2016 is 8.30pm in France</time
+    >
+    <!-- 提及特定周 -->
+    <time datetime="2016-W04">The fourth week of 2016</time>
+    <hr />
+    <p>
+      国王喝得酩酊大醉，在凌晨 1 点时才回到自己的房间，踉跄地走过门口。<span
+        class="editor-note"
+        >[编辑批注：此刻舞台灯光应变暗]</span
+      >.
+    </p>
+
+    <div class="shopping-cart">
+      <h2>购物车</h2>
+      <ul>
+        <li>
+          <p>
+            <a href=""><strong>银耳环</strong></a
+            >：$99.95.
+          </p>
+          <img src="../products/3333-0985/" alt="Silver earrings" />
+        </li>
+        <li>...</li>
+      </ul>
+      <p>售价：$237.89</p>
+    </div>
 
 
-    <script src="scripts/main.js" defer></script>
-
+    <p id="end"></p>
   </body>
 </html>
