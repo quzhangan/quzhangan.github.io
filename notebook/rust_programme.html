@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown File to HTML</title>
+    <!-- <script src="node_modules/marked/marked.min.js"></script> -->
+    <script src="https://unpkg.com/marked@4.0.13/lib/marked.umd.js"></script>
+    <link rel="stylesheet" href="../node_modules/github-markdown-css/github-markdown-dark.css">
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+    </style>
+    <!-- <article class="markdown-body">
+        <h1>Unicorns</h1>
+        <p>All the things</p>
+    </article> -->
+
+</head>
+<body>
+    
+    <div id ="markdown-content" class ="markdown-body">
+    <script>
+        // 获取markdown-content元素
+        const markdownContent = document.getElementById('markdown-content');
+
+        // 加载Markdown文件
+        fetch("rust_programme.md")
+            .then(response => response.text())
+            .then(markdownText => {
+                // 使用marked.js将Markdown转换为HTML并将其插入到页面中
+                markdownContent.innerHTML = marked.parse(markdownText);
+            })
+            .catch(error => {
+                console.error('加载Markdown文件时出错：', error);
+            });
+    </script>
+</body>
+</html>
