@@ -1,47 +1,23 @@
 @echo off
  
-title GIT一键提交
+title GITһ���ύ
 color 3
-echo 当前目录是：%cd%
+echo ��ǰĿ¼�ǣ�%cd%
 echo;
  
-echo 开始添加变更：git add .
+echo ��ʼ���ӱ����git add .
 git add .
 echo;
  
-set /p declation=输入提交的commit信息:
+set /p declation=�����ύ��commit��Ϣ:
 git commit -m "%declation%"
 echo;
  
-echo 将变更情况提交到远程自己分支：git push origin hlt
-git push origin hlt
-echo;
- 
-echo 切换主分支：git checkout master
-git checkout master
-echo;
- 
-echo 本地主分支拉取远程主分支：git pull origin master
-git pull origin master
-echo;
- 
-echo 主分支合并分支：git merge hlt
-git merge hlt
-echo;
- 
-echo 将变更情况提交到远程主分支：git push origin master
+echo �ύ��
 git push origin master
 echo;
  
-echo 切换分支：git checkout hlt
-git checkout hlt
-echo;
- 
-echo 本地分支拉取远程主分支：git pull origin master
-git pull origin master
-echo;
- 
-echo 执行完毕！
+echo ִ����ϣ�
 echo;
  
 pause
