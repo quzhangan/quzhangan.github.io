@@ -38,10 +38,7 @@ function setUserName() {
     localStorage.setItem("name", myName);     //数据存储在浏览器中供后续获取  创建一个'name' 数据项，并把 myName 变量复制给它
     myHeading.textContent = "酷毙了，" + myName;
     }
-    
-
   }
-
 
 if (!localStorage.getItem("name")) {
     setUserName();

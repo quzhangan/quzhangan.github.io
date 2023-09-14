@@ -23,7 +23,7 @@ html {
     background-color: #FF9500; 如前文所述，指定元素的背景颜色
     padding: 0 20px 20px 20px; 我们给内边距设置了四个值来让内容四周产生一点空间
     border: 5px solid black; 这是为边框的宽度、样式和颜色设置的值。在本例中，它是一个在主体的所有侧面的 5 像素宽的纯黑色边框。 */
-    width: 600px;   
+    width: 1200px;   
     margin: 0 auto;
     background-color: #ff9500;
     padding: 0 20px 20px 20px;
