@@ -14,7 +14,7 @@ git commit -m "%declation%"
 echo;
  
 echo 提交：
-git push origin master
+git push origin main
 echo;
  
 echo 执行完毕！
