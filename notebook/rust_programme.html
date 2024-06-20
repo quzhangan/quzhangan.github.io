@@ -32,19 +32,47 @@
     
     <div id ="markdown-content" class ="markdown-body">
     <script>
-        // 获取markdown-content元素
-        const markdownContent = document.getElementById('markdown-content');
 
-        // 加载Markdown文件
-        fetch("rust_programme.md")
-            .then(response => response.text())
-            .then(markdownText => {
-                // 使用marked.js将Markdown转换为HTML并将其插入到页面中
-                markdownContent.innerHTML = marked.parse(markdownText);
-            })
-            .catch(error => {
-                console.error('加载Markdown文件时出错：', error);
-            });
+        // 创建一个新的XMLHttpRequest对象
+        var xhr = new XMLHttpRequest();
+
+        // 打开一个新的HTTP连接，使用GET方法来获取Markdown文件
+        xhr.open('GET', 'rust_programme.md', true);
+
+        // 监听加载完成事件
+        xhr.onload = function () {
+            if (xhr.status >= 200 && xhr.status < 300) {
+                // 当成功加载文件时，将文件内容转换为HTML格式并显示在页面中
+                var converter = new showdown.Converter(); // 引入Showdown库来转换Markdown为HTML
+                var text = xhr.responseText;
+                var html = converter.makeHtml(text);
+                
+                // 将转换后的HTML内容显示在页面中的某个元素中
+                document.getElementById('markdown-content').innerHTML = html;
+            } else {
+                // 处理错误情况
+                console.error('Failed to load Markdown file: ' + xhr.status);
+            }
+        };
+
+        // 发送请求
+        xhr.send();
+
+
+
+        // // 获取markdown-content元素
+        // const markdownContent = document.getElementById('markdown-content');
+
+        // // 加载Markdown文件
+        // fetch("rust_programme.md")
+        //     .then(response => response.text())
+        //     .then(markdownText => {
+        //         // 使用marked.js将Markdown转换为HTML并将其插入到页面中
+        //         markdownContent.innerHTML = marked.parse(markdownText);
+        //     })
+        //     .catch(error => {
+        //         console.error('加载Markdown文件时出错：', error);
+        //     });
     </script>
 </body>
 </html>
